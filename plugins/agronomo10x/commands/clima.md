@@ -1,8 +1,11 @@
 ---
-description: Chuva recente, previsão de 7 dias e janela de pulverização de uma fazenda salva na ClaudIA Clima
+description: Resumo curto do clima de uma fazenda salva na ClaudIA Clima — chuva recente contra a média, previsão de 7 dias e janela de pulverização de 48 h (para o detalhe, /chuva e /pulverizar)
+argument-hint: "<fazenda | lat,long> [período da chuva — padrão: últimos 30 dias]"
 ---
 
 Resuma o clima de uma fazenda salva na ClaudIA Clima. Argumentos: $ARGUMENTS (nome da fazenda e, se quiser, o período da chuva — padrão: os últimos 30 dias).
+
+Conector de clima: `claudia-clima`; se ele não existir na instalação (a ClaudIA Clima ainda não foi lançada), as mesmas ferramentas de clima estão no conector `claudia-sat` — use-as de lá, sem tratar como erro.
 
 1. Sem fazenda nos argumentos, chame `listar_fazendas` do conector `claudia-clima` e pergunte qual.
 2. Chame, com o campo `fazenda`: `clima_historico` (período pedido ou os últimos 30 dias, `comparar_media` ligado), `previsao_tempo` (7 dias) e `janela_pulverizacao` (próximas 48 horas).

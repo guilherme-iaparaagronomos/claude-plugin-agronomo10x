@@ -4,7 +4,7 @@
       "type": "http",
       "url": "https://comunidade.agronomos.ia.br/api/mcp"
     },
-    "claudia-geo": {
+    "claudia-sat": {
       "type": "http",
       "url": "https://comunidade.agronomos.ia.br/api/mcp/geo"
     },

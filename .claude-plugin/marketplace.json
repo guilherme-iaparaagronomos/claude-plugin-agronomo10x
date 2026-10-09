@@ -1,13 +1,16 @@
 {
   "name": "agronomo10x",
-  "owner": { "name": "OagronomIA · comunidade agrônomo10X", "url": "https://comunidade.agronomos.ia.br" },
-  "description": "Plugins da comunidade agrônomo10X para o Claude: conectores (conteúdo, ClaudIA Geo, ClaudIA QGIS) e skills de agronomia.",
+  "owner": {
+    "name": "OagronomIA · comunidade agrônomo10X",
+    "url": "https://comunidade.agronomos.ia.br"
+  },
+  "description": "Plugins da comunidade agrônomo10X para o Claude: conectores (conteúdo, ClaudIA Sat, ClaudIA QGIS; ClaudIA Clima no próximo lançamento), skills de agronomia e a análise de drone no QGIS.",
   "plugins": [
     {
       "name": "agronomo10x",
       "source": "./plugins/agronomo10x",
-      "description": "Os três conectores da comunidade agrônomo10X com as skills que ensinam o Claude a usá-los juntos.",
-      "version": "0.1.0"
+      "description": "Os conectores da comunidade agrônomo10X, as skills que ensinam o Claude a usá-los juntos e os atalhos de fazenda, satélite, clima, QGIS e drone.",
+      "version": "0.3.0"
     }
   ]
 }

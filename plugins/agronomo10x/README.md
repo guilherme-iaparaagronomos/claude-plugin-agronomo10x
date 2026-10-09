@@ -1,12 +1,14 @@
 # agrônomo10X — plugin do Claude
 
-Reúne, numa instalação só, os três conectores da comunidade [agrônomo10X](https://comunidade.agronomos.ia.br)
+Reúne, numa instalação só, os quatro conectores da comunidade [agrônomo10X](https://comunidade.agronomos.ia.br)
 (powered by OagronomIA) e as skills que ensinam o Claude a combiná-los:
 
 - **Comunidade 10X** — aulas, lives, trilhas, fórum, eventos, vagas, mentorias, ferramentas de IA e o
   catálogo de skills, com trecho e minuto da fonte.
-- **ClaudIA Geo** — imagens do satélite Sentinel-2 (RGB, NDVI, NDRE), composto, curva temporal, laudo em
-  PDF, clima atual, histórico desde 1998 e previsão, janela de pulverização, fazendas salvas na conta.
+- **ClaudIA Sat** — imagens do satélite Sentinel-2 (RGB, NDVI, NDRE), composto, curva temporal, laudo em
+  PDF e o mapa dos talhões das fazendas salvas na conta.
+- **ClaudIA Clima** — clima agora, histórico de chuva desde 1998 comparado com a média 1991–2020, previsão de
+  7 dias e janela de pulverização, pelas mesmas fazendas salvas, por um perímetro ou por um ponto.
 - **ClaudIA QGIS** — opera o QGIS aberto no seu computador pelo plugin ClaudIA QGIS: camadas, estilos,
   processamento, layouts, checkpoints.
 
@@ -20,7 +22,7 @@ Reúne, numa instalação só, os três conectores da comunidade [agrônomo10X](
 2. Peça em linguagem natural: *"NDVI da Fazenda 2 aberto no QGIS"*, *"laudo da Santa Rita"*,
    *"tem aula sobre krigagem?"*, *"vai chover na fazenda esta semana?"*. As skills escolhem o conector certo
    e, quando o Claude tem acesso a pastas (app desktop e Claude Code), salvam os arquivos gerados e os abrem no QGIS.
-3. Comandos de atalho: `/agronomo10x:ndvi`, `/agronomo10x:laudo`, `/agronomo10x:aula` (no chat do claude.ai
+3. Comandos de atalho: `/agronomo10x:ndvi`, `/agronomo10x:laudo`, `/agronomo10x:clima`, `/agronomo10x:aula` (no chat do claude.ai
    eles funcionam como skills).
 
 ## Dados

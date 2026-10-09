@@ -40,11 +40,15 @@ plugins/agronomo10x/              o plugin
   .mcp.json                       os conectores, por URL (servidores da comunidade)
   skills/roteamento-agronomo10x   qual conector para cada pedido, regras e entrega por app
   skills/satelite-no-qgis         imagem da Geo aberta e estilizada no QGIS
-  skills/do-conteudo-a-pratica    aula ou skill → passo reproduzido na Geo ou no QGIS
-  commands/                       /agronomo10x:ndvi, :laudo, :aula
+  skills/do-conteudo-a-pratica    aula ou skill → passo reproduzido na Sat ou no QGIS
+  skills/leitura-satelite, clima-na-fazenda, zonas-de-manejo-qgis   como ler, narrar e fazer zonas no QGIS
+  skills/drone-*                  as 8 skills da ClaudIA Drone (GERADAS por scripts/gera-drone.mjs)
+  commands/                       29 atalhos: fazenda, datas, ndvi, laudo, curva, chuva, clima, pulverizar, boletim,
+                                  comparar, zonas, no-qgis, aula e os 16 de drone (cena-drone … faltantes)
   evals/                          casos para `claude plugin eval`
   README.md, LICENSE
-scripts/gera.mjs                  gera dist/dev (conectores num servidor de dev), dist/prod e o zip
+scripts/gera.mjs                  gera dist/dev (conectores num servidor de dev), dist/prod e o zip (--sem-clima = zip para a produção sem o Clima)
+scripts/gera-drone.mjs            reparte o playbook público analise-drone-qgis (skills-agro) nas 8 skills de drone + scripts/drone-extras/
 ```
 
 ## Desenvolver

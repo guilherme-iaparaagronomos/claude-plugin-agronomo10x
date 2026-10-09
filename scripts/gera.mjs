@@ -7,6 +7,7 @@
 //   node scripts/gera.mjs                                  (base dev = http://localhost:3000)
 //   node scripts/gera.mjs --base http://<host-do-dev>:3000
 //   node scripts/gera.mjs --zip
+//   node scripts/gera.mjs --zip --sem-clima   (zip para a produção de hoje, sem o conector claudia-clima)
 // A base de dev precisa ser o NEXT_PUBLIC_APP_URL do servidor de dev (o OAuth confere o `resource`).
 import fs from 'node:fs'
 import path from 'node:path'
@@ -18,6 +19,9 @@ const fonte = path.join(raiz, 'plugins', 'agronomo10x')
 const args = process.argv.slice(2)
 const base = (args.includes('--base') ? args[args.indexOf('--base') + 1] : 'http://localhost:3000').replace(/\/$/, '')
 const comZip = args.includes('--zip')
+// --sem-clima: variante para a PRODUÇÃO de hoje, que ainda não serve /api/mcp/clima — o zip sai sem o conector
+// claudia-clima (os comandos de clima avisam para conectar o conector quando ele existir).
+const semClima = args.includes('--sem-clima')
 
 const manifesto = JSON.parse(fs.readFileSync(path.join(fonte, '.claude-plugin', 'plugin.json'), 'utf8'))
 const mcp = JSON.parse(fs.readFileSync(path.join(fonte, '.mcp.json'), 'utf8'))
@@ -47,6 +51,11 @@ console.log(`dev  → ${path.relative(raiz, dev)} (conectores em ${base})`)
 // prod: cópia fiel
 const prod = path.join(raiz, 'dist', 'prod', 'agronomo10x')
 copia(prod)
+if (semClima) {
+  const mcpProd = { mcpServers: Object.fromEntries(Object.entries(mcp.mcpServers).filter(([n]) => n !== 'claudia-clima')) }
+  fs.writeFileSync(path.join(prod, '.mcp.json'), JSON.stringify(mcpProd, null, 2) + '\n')
+  console.log('prod sem o conector claudia-clima (--sem-clima)')
+}
 console.log(`prod → ${path.relative(raiz, prod)} (versão ${manifesto.version})`)
 
 if (comZip) {
