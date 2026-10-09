@@ -5,7 +5,7 @@ argument-hint: "<fazenda> [talhão]"
 
 Argumentos: $ARGUMENTS
 
-Conector de clima: `claudia-clima`; se ele não existir na instalação (a ClaudIA Clima ainda não foi lançada), as mesmas ferramentas de clima estão no conector `claudia-sat` — use-as de lá, sem tratar como erro.
+Conector de clima: `claudia-clima`. Se ele não aparecer na instalação, peça para o usuário atualizar o plugin (0.3.1 ou mais novo) ou conectar pela aba Conectar em `https://comunidade.agronomos.ia.br/solucoes/mcp/clima` — as ferramentas de clima não estão mais no conector de satélite.
 
 1. Sem fazenda nos argumentos, chame `listar_fazendas` (conector `claudia-sat`) e pergunte qual. Com talhão citado, passe `talhao` em todas as chamadas de satélite.
 2. Chamadas, nesta ordem:

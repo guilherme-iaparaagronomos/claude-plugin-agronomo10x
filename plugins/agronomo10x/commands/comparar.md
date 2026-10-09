@@ -5,7 +5,7 @@ argument-hint: "<fazenda> <período A> x <período B> [ndvi|ndre] [no QGIS]"
 
 Argumentos: $ARGUMENTS
 
-Conector de clima: `claudia-clima`; se ele não existir na instalação (a ClaudIA Clima ainda não foi lançada), as mesmas ferramentas de clima estão no conector `claudia-sat` — use-as de lá, sem tratar como erro.
+Conector de clima: `claudia-clima`. Se ele não aparecer na instalação, peça para o usuário atualizar o plugin (0.3.1 ou mais novo) ou conectar pela aba Conectar em `https://comunidade.agronomos.ia.br/solucoes/mcp/clima` — as ferramentas de clima não estão mais no conector de satélite.
 
 1. Sem fazenda nos argumentos, chame `listar_fazendas` do conector `claudia-sat` e pergunte qual. Traduza os dois períodos em datas e DIGA a tradução ("safra 2025" = 01/09/2024 a 31/08/2025; "setembro × outubro" = os meses inteiros; "mês passado × este mês" = idem).
 2. `claudia-sat` → `composto_indice` duas vezes, com `fazenda`, `indice` (`ndvi` por padrão), `operacao: "mediana"` e as datas de A e de B. Depois `curva_indice` nos dois períodos (`todos_talhoes: true`) e calcule a média dos pontos de cada talhão em cada período.

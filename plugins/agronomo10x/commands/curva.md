@@ -5,7 +5,7 @@ argument-hint: "<fazenda> [ndvi|ndre] [talhão | talhões] [período — padrão
 
 Argumentos: $ARGUMENTS
 
-Conector de clima: `claudia-clima`; se ele não existir na instalação (a ClaudIA Clima ainda não foi lançada), as mesmas ferramentas de clima estão no conector `claudia-sat` — use-as de lá, sem tratar como erro.
+Conector de clima: `claudia-clima`. Se ele não aparecer na instalação, peça para o usuário atualizar o plugin (0.3.1 ou mais novo) ou conectar pela aba Conectar em `https://comunidade.agronomos.ia.br/solucoes/mcp/clima` — as ferramentas de clima não estão mais no conector de satélite.
 
 1. Sem fazenda nos argumentos, chame `listar_fazendas` do conector `claudia-sat` e pergunte qual.
 2. Chame `curva_indice` com `fazenda`, `indice` (`ndvi` por padrão; `ndre` quando pedido ou quando o usuário quer separar talhões com dossel fechado), `data_inicio`/`data_fim` (padrão: últimos 120 dias) e `todos_talhoes: true` — ou `talhoes: [...]`/`talhao` quando ele citou alguns. Período acima de 400 dias: divida em chamadas safra a safra e junte.

@@ -5,7 +5,7 @@ argument-hint: "<fazenda | lat,long> [período: safra 2024/25 | últimos 5 anos 
 
 Argumentos: $ARGUMENTS
 
-Conector de clima: `claudia-clima`; se ele não existir na instalação (a ClaudIA Clima ainda não foi lançada), as mesmas ferramentas de clima estão no conector `claudia-sat` — use-as de lá, sem tratar como erro.
+Conector de clima: `claudia-clima`. Se ele não aparecer na instalação, peça para o usuário atualizar o plugin (0.3.1 ou mais novo) ou conectar pela aba Conectar em `https://comunidade.agronomos.ia.br/solucoes/mcp/clima` — as ferramentas de clima não estão mais no conector de satélite.
 
 1. Sem fazenda nos argumentos, chame `listar_fazendas` do conector `claudia-clima` e pergunte qual (latitude e longitude também servem).
 2. Traduza o período em datas e DIGA a tradução: "safra 2024/25" = 01/09/2024 a 31/08/2025 (padrão da casa; o usuário pode mudar); "últimos 5 anos" = os 5 anos-calendário completos; "este ano" = 01/01 até hoje; sem período = os últimos 12 meses completos.
