@@ -12,9 +12,11 @@ Reúne, numa instalação só, os três conectores da comunidade [agrônomo10X](
 
 ## Como usar
 
-1. Instale o plugin e, na aba **Connectors**, conecte cada conector com a sua conta da comunidade
-   (no Claude Code, `/mcp` → autenticar). Os conectores fazem parte do plano Pro; a ClaudIA QGIS tem 30 dias
-   de teste para contas gratuitas.
+1. Instale o plugin pelo marketplace `guilherme-iaparaagronomos/claude-plugin-agronomo10x` (claude.ai e app
+   desktop: Customize › Plugins › Add › Add marketplace; Claude Code: `/plugin marketplace add` e
+   `/plugin install agronomo10x@agronomo10x`) e, na aba **Connectors**, conecte cada conector com a sua conta
+   da comunidade (no Claude Code, `/mcp` → autenticar). Os conectores fazem parte do plano Pro; a ClaudIA QGIS
+   tem 30 dias de teste para contas gratuitas.
 2. Peça em linguagem natural: *"NDVI da Fazenda 2 aberto no QGIS"*, *"laudo da Santa Rita"*,
    *"tem aula sobre krigagem?"*, *"vai chover na fazenda esta semana?"*. As skills escolhem o conector certo
    e, quando o Claude tem acesso a pastas (app desktop e Claude Code), salvam os arquivos gerados e os abrem no QGIS.
