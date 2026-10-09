@@ -15,8 +15,6 @@ mais comuns — inclusive a análise de imagens de drone no QGIS (ClaudIA Drone)
 - **ClaudIA QGIS** — opera o QGIS aberto no seu computador pelo plugin ClaudIA QGIS: camadas, estilos,
   processamento, layouts, checkpoints.
 
-**ClaudIA Clima está em lançamento**: enquanto o conector `claudia-clima` não aparece na sua instalação, as ferramentas de clima (clima atual, histórico, previsão, janela de pulverização) respondem pelo conector ClaudIA Sat, e os comandos de clima já sabem disso.
-
 Cada conector pede o login da sua conta na comunidade; os conectores fazem parte do plano Pro (a ClaudIA QGIS tem
 teste grátis para contas gratuitas). O plugin é só texto e não guarda credencial.
 

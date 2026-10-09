@@ -8,6 +8,10 @@
       "type": "http",
       "url": "https://comunidade.agronomos.ia.br/api/mcp/geo"
     },
+    "claudia-clima": {
+      "type": "http",
+      "url": "https://comunidade.agronomos.ia.br/api/mcp/clima"
+    },
     "claudia-qgis": {
       "type": "http",
       "url": "https://comunidade.agronomos.ia.br/api/mcp/qgis"
