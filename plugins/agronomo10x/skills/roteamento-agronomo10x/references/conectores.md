@@ -51,8 +51,6 @@ Regras do servidor: imagens do Sentinel-2 processadas pela comunidade (sigilo so
 
 Até o lançamento da ClaudIA Clima, estas ferramentas também respondem no conector `claudia-sat` (é onde ficam se o `claudia-clima` não aparecer na instalação).
 
-Até o lançamento da ClaudIA Clima, estas ferramentas também respondem no conector `claudia-sat` (é onde ficam se o `claudia-clima` não aparecer na instalação).
-
 | Ferramenta | Para quê | Entrada principal |
 |---|---|---|
 | `listar_fazendas` | as fazendas salvas na conta (as mesmas da Sat) | — |

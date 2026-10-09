@@ -51,7 +51,6 @@ As skills `leitura-satelite`, `clima-na-fazenda` e `zonas-de-manejo-qgis` carreg
 ## 2. Antes de chamar: login, plano e limites
 
 - Enquanto a ClaudIA Clima não é lançada, a instalação pode não ter o conector `claudia-clima`: nesse caso as ferramentas de clima (`clima_atual`, `clima_historico`, `previsao_tempo`, `janela_pulverizacao`) estão no conector `claudia-sat` — use-as de lá, sem tratar como erro.
-- Enquanto a ClaudIA Clima não é lançada, a instalação pode não ter o conector `claudia-clima`: nesse caso as ferramentas de clima (`clima_atual`, `clima_historico`, `previsao_tempo`, `janela_pulverizacao`) estão no conector `claudia-sat` — use-as de lá, sem tratar como erro.
 - Cada conector exige a conta da comunidade. Comunidade 10X, ClaudIA Sat e ClaudIA Clima fazem parte do plano Pro; a ClaudIA QGIS também, e a conta gratuita tem 30 dias de teste. Sem acesso, a ferramenta explica e aponta `https://comunidade.agronomos.ia.br/planos`: repasse isso sem inventar preço nem prazo.
 - A ClaudIA QGIS precisa do plugin ClaudIA QGIS instalado e conectado no QGIS do usuário (token gerado em `https://comunidade.agronomos.ia.br/solucoes/mcp/claudia-qgis`). `ping` responde pong quando está conectado; se não responder, oriente esse caminho e não insista com outras ferramentas.
 - Limites por conta: 2 conexões ativas por conector e 1 por ferramenta (um Claude, um ChatGPT). Se o consentimento disser que já existe uma conexão do Claude, o usuário gerencia em `https://comunidade.agronomos.ia.br/solucoes/mcp`.
