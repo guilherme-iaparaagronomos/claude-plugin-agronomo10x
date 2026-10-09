@@ -16,6 +16,7 @@ Você está com o plugin agrônomo10X. Ele instala quatro conectores da comunida
 | Fórum, vagas, ferramentas de IA, skills do catálogo | `comunidade` | `buscar_forum`, `listar_vagas`, `listar_ferramentas`, `listar_skills` → `skill_conteudo` (devolve o SKILL.md para você aplicar) |
 | Imagem de satélite (NDVI, NDRE, RGB), laudo PDF, composto, curva temporal de uma fazenda | `claudia-sat` | `listar_fazendas` → `imagem_satelite` / `laudo_pdf` / `composto_indice` / `curva_indice`, com o campo `fazenda` |
 | Clima agora, previsão (até 7 dias), chuva e temperatura históricas (desde 1998), janela de pulverização (Delta T) | `claudia-clima` | `clima_atual`, `previsao_tempo`, `clima_historico`, `janela_pulverizacao` (com `fazenda` ou latitude e longitude) |
+| "Como está o ano?", "está chovendo mais que o normal?", "é ano de El Niño?", "este ano parece com qual?" | `claudia-clima` | `contexto_chuva` — descrição do registro (acumulado desde 1º de julho × os outros anos, ano típico, fase do Pacífico sem sigla); nunca vira previsão |
 | Perímetro novo que o usuário colou (GeoJSON, KML, WKT) | `claudia-sat` ou `claudia-clima` | a própria ferramenta com `geometria`; para reaproveitar, `salvar_fazenda` (`substituir` só depois de o usuário confirmar) |
 | Fazendas salvas (listar, salvar) | `claudia-sat` ou `claudia-clima` | `listar_fazendas`, `salvar_fazenda` — as fazendas são da CONTA: salvou num conector, usa pelo nome no outro (e no site e no WhatsApp) |
 | Mapa esquemático dos talhões com nome e área | `claudia-sat` | `listar_talhoes`, `mapa_talhoes` |
@@ -36,7 +37,7 @@ Quando o pedido combina com um comando, aplique o comando (no claude.ai ele carr
 | imagem da cena mais recente (NDVI, RGB, NDRE) | `/ndvi` |
 | laudo em PDF | `/laudo` |
 | curva por talhão, ranking, "qual talhão caiu" | `/curva` |
-| chuva histórica, "choveu quanto na safra", veranico, graus-dia | `/chuva` |
+| chuva histórica, "choveu quanto na safra", veranico, graus-dia, "como está a chuva deste ano" | `/chuva` |
 | clima agora + 30 dias + previsão + janela (resumo curto) | `/clima` |
 | janelas de pulverização detalhadas, Delta T hora a hora | `/pulverizar` |
 | "como está a fazenda", resumo geral de satélite e clima | `/boletim` |
@@ -50,7 +51,7 @@ As skills `leitura-satelite`, `clima-na-fazenda` e `zonas-de-manejo-qgis` carreg
 
 ## 2. Antes de chamar: login, plano e limites
 
-- Enquanto a ClaudIA Clima não é lançada, a instalação pode não ter o conector `claudia-clima`: nesse caso as ferramentas de clima (`clima_atual`, `clima_historico`, `previsao_tempo`, `janela_pulverizacao`) estão no conector `claudia-sat` — use-as de lá, sem tratar como erro.
+- Enquanto a ClaudIA Clima não é lançada, a instalação pode não ter o conector `claudia-clima`: nesse caso as ferramentas de clima (`clima_atual`, `clima_historico`, `contexto_chuva`, `previsao_tempo`, `janela_pulverizacao`) estão no conector `claudia-sat` — use-as de lá, sem tratar como erro.
 - Cada conector exige a conta da comunidade. Comunidade 10X, ClaudIA Sat e ClaudIA Clima fazem parte do plano Pro; a ClaudIA QGIS também, e a conta gratuita tem 30 dias de teste. Sem acesso, a ferramenta explica e aponta `https://comunidade.agronomos.ia.br/planos`: repasse isso sem inventar preço nem prazo.
 - A ClaudIA QGIS precisa do plugin ClaudIA QGIS instalado e conectado no QGIS do usuário (token gerado em `https://comunidade.agronomos.ia.br/solucoes/mcp/claudia-qgis`). `ping` responde pong quando está conectado; se não responder, oriente esse caminho e não insista com outras ferramentas.
 - Limites por conta: 2 conexões ativas por conector e 1 por ferramenta (um Claude, um ChatGPT). Se o consentimento disser que já existe uma conexão do Claude, o usuário gerencia em `https://comunidade.agronomos.ia.br/solucoes/mcp`.

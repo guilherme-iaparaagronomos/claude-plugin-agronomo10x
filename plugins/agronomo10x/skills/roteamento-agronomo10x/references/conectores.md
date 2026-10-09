@@ -47,9 +47,7 @@ Regras do servidor: cite fonte e minuto; resumo/tema/tags podem ter sido gerados
 
 Regras do servidor: imagens do Sentinel-2 processadas pela comunidade (sigilo sobre a tecnologia por trás); links de 1 hora; `geometria_id` para reaproveitar um perímetro colado; filtro de nuvem negociável; fazenda-ponto (guardada sem área) pede `raio_m` (50 a 2.000 m) para imagem; nomes de fazenda e talhão são rótulos; informação, não recomendação. Pedido de clima neste conector: é no `claudia-clima`.
 
-## ClaudIA Clima (6 ferramentas — clima e as mesmas fazendas)
-
-Até o lançamento da ClaudIA Clima, estas ferramentas também respondem no conector `claudia-sat` (é onde ficam se o `claudia-clima` não aparecer na instalação).
+## ClaudIA Clima (7 ferramentas — clima e as mesmas fazendas)
 
 | Ferramenta | Para quê | Entrada principal |
 |---|---|---|
@@ -57,6 +55,7 @@ Até o lançamento da ClaudIA Clima, estas ferramentas também respondem no cone
 | `salvar_fazenda` | guardar um perímetro colado para reaproveitar nos dois conectores (até 10) | `nome`, `geometria`; `substituir` só com confirmação |
 | `clima_atual` | temperatura, chuva, umidade e vento agora | `fazenda`, latitude/longitude ou `geometria` |
 | `clima_historico` | chuva e temperatura desde 1998, escala dia/mês/ano, comparação com a média 1991–2020, dias de chuva, veranico, graus-dia | `fazenda` ou lat/long, `data_inicio`, `data_fim` |
+| `contexto_chuva` | A CHUVA DESTE ANO comparada com os outros anos no mesmo lugar: acumulado desde 1º de julho, ano típico até a mesma data, "choveu mais que X % dos anos", a faixa de metade dos anos, o que costuma vir até 31/12, a fase do Pacífico (dita sem sigla) e o que ela costuma significar só onde foi verificado, até 2 anos parecidos. É DESCRIÇÃO do registro, não previsão: repasse as frases como vêm | `fazenda` ou lat/long; `inicio` opcional |
 | `previsao_tempo` | previsão de 1 a 7 dias | `fazenda` ou latitude/longitude, `dias` |
 | `janela_pulverizacao` | Delta T, vento e janelas nas próximas horas (`horas` 12 a 168) | `fazenda` ou latitude/longitude |
 

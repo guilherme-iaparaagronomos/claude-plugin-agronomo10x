@@ -15,8 +15,6 @@ mais comuns — inclusive a análise de imagens de drone no QGIS (ClaudIA Drone)
 - **ClaudIA QGIS** — opera o QGIS aberto no seu computador pelo plugin ClaudIA QGIS: camadas, estilos,
   processamento, layouts, checkpoints.
 
-**ClaudIA Clima está em lançamento**: enquanto o conector `claudia-clima` não aparece na sua instalação, as ferramentas de clima (clima atual, histórico, previsão, janela de pulverização) respondem pelo conector ClaudIA Sat, e os comandos de clima já sabem disso.
-
 Cada conector pede o login da sua conta na comunidade; os conectores fazem parte do plano Pro (a ClaudIA QGIS tem
 teste grátis para contas gratuitas). O plugin é só texto e não guarda credencial.
 
@@ -40,7 +38,7 @@ teste grátis para contas gratuitas). O plugin é só texto e não guarda creden
 | `/ndvi <fazenda>` | imagem da cena mais recente (NDVI, RGB ou NDRE), com "no QGIS" |
 | `/laudo <fazenda>` | laudo em PDF |
 | `/curva <fazenda>` | curva do índice talhão a talhão, ranking, quedas e a chuva do período |
-| `/chuva <fazenda> [período]` | chuva histórica desde 1998 contra a média, veranico, graus-dia |
+| `/chuva <fazenda> [período]` | chuva histórica desde 1998 contra a média, veranico, graus-dia, a chuva deste ano comparada com os outros |
 | `/clima <fazenda>` | resumo curto: 30 dias, previsão de 7 dias, janela de 48 h |
 | `/pulverizar <fazenda> [horas]` | janelas de pulverização hora a hora (Delta T, vento, chuva) |
 | `/boletim <fazenda>` | boletim de uma página: cena, tendência, chuva, previsão, janelas, ressalvas |
