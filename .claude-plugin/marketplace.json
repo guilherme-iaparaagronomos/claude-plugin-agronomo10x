@@ -1,0 +1,13 @@
+{
+  "name": "agronomo10x",
+  "owner": { "name": "OagronomIA · comunidade agrônomo10X", "url": "https://comunidade.agronomos.ia.br" },
+  "description": "Plugins da comunidade agrônomo10X para o Claude: conectores (conteúdo, ClaudIA Geo, ClaudIA QGIS) e skills de agronomia.",
+  "plugins": [
+    {
+      "name": "agronomo10x",
+      "source": "./plugins/agronomo10x",
+      "description": "Os três conectores da comunidade agrônomo10X com as skills que ensinam o Claude a usá-los juntos.",
+      "version": "0.1.0"
+    }
+  ]
+}

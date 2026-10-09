@@ -1,0 +1,11 @@
+{
+  "name": "agronomo10x",
+  "displayName": "agrônomo10X",
+  "version": "0.1.0",
+  "description": "Os três conectores da comunidade agrônomo10X — conteúdo das aulas e lives, ClaudIA Geo (satélite Sentinel-2 e clima da fazenda) e ClaudIA QGIS (opera o QGIS aberto no seu computador) — com as skills que ensinam o Claude a usá-los juntos. Exige conta na comunidade; cada conector pede o login dela.",
+  "author": { "name": "OagronomIA · comunidade agrônomo10X", "url": "https://comunidade.agronomos.ia.br" },
+  "homepage": "https://comunidade.agronomos.ia.br/solucoes/mcp",
+  "repository": "https://github.com/guilherme-iaparaagronomos/claude-plugin-agronomo10x",
+  "license": "MIT",
+  "keywords": ["agronomia", "agro", "satelite", "ndvi", "clima", "qgis", "agricultura-de-precisao"]
+}
