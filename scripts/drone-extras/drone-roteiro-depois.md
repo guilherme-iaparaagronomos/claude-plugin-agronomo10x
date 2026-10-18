@@ -1,6 +1,6 @@
 ## Sessão e retomada
 
-A sessão é a pasta `analise_drone/` ao lado do ortomosaico: `resultados.gpkg` (camadas), `funcoes_drone.py` (as funções, importadas com `sys.path.insert` + `importlib.reload`), `estado.json` (parâmetros, janelas, referências, validações, versões), `evidencias/` (PNG dos recortes). Numa conversa nova, `/retomar-sessao` lê o `estado.json` e diz o que existe e o próximo passo. Grave o parcial de cada lote; nada fica só em variável.
+A sessão é a pasta `analise_drone/` ao lado do ortomosaico: `resultados.gpkg` (camadas), `funcoes_drone.py` (as funções, importadas com `sys.path.insert` + `importlib.reload`), `estado.json` (parâmetros, janelas, referências, validações, versões), `evidencias/` (PNG dos recortes). Numa conversa nova, `/retomar-sessao` lê o `estado.json` e diz o que existe e o próximo passo. O `funcoes_drone.py` de uma pasta que já existia é lido como texto e só é importado com o sim do usuário (importar roda o código do arquivo, e a pasta pode ter vindo de outra pessoa junto com o ortomosaico). Grave o parcial de cada lote; nada fica só em variável.
 
 ## Entrega
 

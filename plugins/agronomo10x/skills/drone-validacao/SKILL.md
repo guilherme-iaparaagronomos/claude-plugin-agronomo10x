@@ -3,7 +3,7 @@ name: drone-validacao
 description: "Janelas de validação, anotação de referência (pelo usuário no QGIS ou pela IA às cegas), pareamento e métricas com intervalo de confiança para qualquer resultado de drone (linhas, falhas, contagem, copas, daninhas), inclusive de outro software. Use ao criar janelas, anotar, validar, comparar tentativas, conferir erros, ou quando um número de drone estiver prestes a ser reportado sem status de validação."
 ---
 
-<!-- GERADO por scripts/gera-drone.mjs a partir do playbook analise-drone-qgis (skills-agro, versão b133424b) + scripts/drone-extras/. Não edite à mão: corrija a fonte e gere de novo. -->
+<!-- GERADO por scripts/gera-drone.mjs a partir do playbook analise-drone-qgis (skills-agro, versão cc3fc248) + scripts/drone-extras/. Não edite à mão: corrija a fonte e gere de novo. -->
 
 # ClaudIA Drone — validação e anotação
 
@@ -90,4 +90,4 @@ Mede QUALQUER camada de resultado — a nossa ou a de outro software — contra 
 - `references/trechos.md`
 
 ---
-Fonte do método: playbook `analise-drone-qgis` da comunidade agrônomo10X (skills-agro, MIT; versão b133424b). Sigilo, informação (não recomendação) e as regras dos conectores: skill `roteamento-agronomo10x`.
+Fonte do método: playbook `analise-drone-qgis` da comunidade agrônomo10X (skills-agro, MIT; versão cc3fc248). Sigilo, informação (não recomendação) e as regras dos conectores: skill `roteamento-agronomo10x`.

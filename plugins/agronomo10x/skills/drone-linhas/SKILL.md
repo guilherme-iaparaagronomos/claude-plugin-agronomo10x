@@ -3,7 +3,7 @@ name: drone-linhas
 description: "Restituição de linhas de plantio em ortomosaico de drone (FFT por bloco, cristas, união de segmentos; alternativas para linhas curvas e duplas), com validação e critérios. Use para \"linhas de plantio\", \"fileiras\", \"espaçamento entre linhas\", \"desvio das linhas\", e antes de falhas ou contagem na fileira."
 ---
 
-<!-- GERADO por scripts/gera-drone.mjs a partir do playbook analise-drone-qgis (skills-agro, versão b133424b) + scripts/drone-extras/. Não edite à mão: corrija a fonte e gere de novo. -->
+<!-- GERADO por scripts/gera-drone.mjs a partir do playbook analise-drone-qgis (skills-agro, versão cc3fc248) + scripts/drone-extras/. Não edite à mão: corrija a fonte e gere de novo. -->
 
 # ClaudIA Drone — restituição de linhas
 
@@ -59,4 +59,4 @@ description: "Restituição de linhas de plantio em ortomosaico de drone (FFT po
 - `references/trechos.md`
 
 ---
-Fonte do método: playbook `analise-drone-qgis` da comunidade agrônomo10X (skills-agro, MIT; versão b133424b). Sigilo, informação (não recomendação) e as regras dos conectores: skill `roteamento-agronomo10x`.
+Fonte do método: playbook `analise-drone-qgis` da comunidade agrônomo10X (skills-agro, MIT; versão cc3fc248). Sigilo, informação (não recomendação) e as regras dos conectores: skill `roteamento-agronomo10x`.

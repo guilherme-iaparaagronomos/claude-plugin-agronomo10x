@@ -3,7 +3,7 @@ name: drone-segmentacao
 description: "Segmentação de copas, daninhas e outras plantas em ortomosaico de drone: watershed a partir dos pontos, SAM por ponto com refinos, plugins que o usuário já tenha (Geo SAM, SamGeo, GeoOSAM) com a nossa validação, plantas fora do padrão da linha. Use para \"copas\", \"área de copa\", \"cobertura\", \"daninhas\", \"mato\", \"zonas de aplicação\", \"segmentar\"."
 ---
 
-<!-- GERADO por scripts/gera-drone.mjs a partir do playbook analise-drone-qgis (skills-agro, versão b133424b) + scripts/drone-extras/. Não edite à mão: corrija a fonte e gere de novo. -->
+<!-- GERADO por scripts/gera-drone.mjs a partir do playbook analise-drone-qgis (skills-agro, versão cc3fc248) + scripts/drone-extras/. Não edite à mão: corrija a fonte e gere de novo. -->
 
 # ClaudIA Drone — segmentação de copas e daninhas
 
@@ -62,4 +62,4 @@ Manchas confirmadas → área infestada em hectares e % da área útil, número 
 - Validação: IoU mediano ≥ 0,75 e erro de área ≤ 10 % como critério inicial, em pelo menos 100 polígonos de referência (modo completo).
 
 ---
-Fonte do método: playbook `analise-drone-qgis` da comunidade agrônomo10X (skills-agro, MIT; versão b133424b). Sigilo, informação (não recomendação) e as regras dos conectores: skill `roteamento-agronomo10x`.
+Fonte do método: playbook `analise-drone-qgis` da comunidade agrônomo10X (skills-agro, MIT; versão cc3fc248). Sigilo, informação (não recomendação) e as regras dos conectores: skill `roteamento-agronomo10x`.

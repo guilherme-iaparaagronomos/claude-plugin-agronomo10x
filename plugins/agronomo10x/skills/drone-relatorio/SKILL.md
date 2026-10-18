@@ -3,7 +3,7 @@ name: drone-relatorio
 description: "Relatório da análise de drone para o cliente: o completo por desafio (identificação, método, resultados por talhão e por hectare útil, validação, evidências, ressalvas, arquivos) e o de uma página, com a frase de capa e a regra de informação, não recomendação. Use para \"relatório\", \"laudo do drone\", \"resumo para o cliente\", \"exportar\", e ao fechar uma análise."
 ---
 
-<!-- GERADO por scripts/gera-drone.mjs a partir do playbook analise-drone-qgis (skills-agro, versão b133424b) + scripts/drone-extras/. Não edite à mão: corrija a fonte e gere de novo. -->
+<!-- GERADO por scripts/gera-drone.mjs a partir do playbook analise-drone-qgis (skills-agro, versão cc3fc248) + scripts/drone-extras/. Não edite à mão: corrija a fonte e gere de novo. -->
 
 # ClaudIA Drone — relatório
 
@@ -69,4 +69,4 @@ O `/relatorio-1pagina` escolhe, em cada desafio, os 3–5 números da coluna do 
 Com o módulo (versão 1): `cd.relatorio.gerar(s, desafio)` e `cd.relatorio.resumir(s, resultado, criterio)`.
 
 ---
-Fonte do método: playbook `analise-drone-qgis` da comunidade agrônomo10X (skills-agro, MIT; versão b133424b). Sigilo, informação (não recomendação) e as regras dos conectores: skill `roteamento-agronomo10x`.
+Fonte do método: playbook `analise-drone-qgis` da comunidade agrônomo10X (skills-agro, MIT; versão cc3fc248). Sigilo, informação (não recomendação) e as regras dos conectores: skill `roteamento-agronomo10x`.

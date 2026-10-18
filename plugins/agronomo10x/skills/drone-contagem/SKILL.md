@@ -3,7 +3,7 @@ name: drone-contagem
 description: "Contagem de plantas e árvores em ortomosaico de drone (diagnóstico do padrão de plantio, mapa do alvo, máximos locais ou picos na fileira), plantas por hectare útil e por metro, emergência, uniformidade de estande e plantas faltantes em perenes. Use para \"contar plantas\", \"estande\", \"população\", \"árvores por hectare\", \"uniformidade\", \"faltantes\"."
 ---
 
-<!-- GERADO por scripts/gera-drone.mjs a partir do playbook analise-drone-qgis (skills-agro, versão b133424b) + scripts/drone-extras/. Não edite à mão: corrija a fonte e gere de novo. -->
+<!-- GERADO por scripts/gera-drone.mjs a partir do playbook analise-drone-qgis (skills-agro, versão cc3fc248) + scripts/drone-extras/. Não edite à mão: corrija a fonte e gere de novo. -->
 
 # ClaudIA Drone — contagem de plantas
 
@@ -57,4 +57,4 @@ Linhas + plantas → posições esperadas pelo espaçamento ao longo da fileira 
 - `references/trechos.md`
 
 ---
-Fonte do método: playbook `analise-drone-qgis` da comunidade agrônomo10X (skills-agro, MIT; versão b133424b). Sigilo, informação (não recomendação) e as regras dos conectores: skill `roteamento-agronomo10x`.
+Fonte do método: playbook `analise-drone-qgis` da comunidade agrônomo10X (skills-agro, MIT; versão cc3fc248). Sigilo, informação (não recomendação) e as regras dos conectores: skill `roteamento-agronomo10x`.

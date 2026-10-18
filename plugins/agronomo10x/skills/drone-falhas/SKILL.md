@@ -3,7 +3,7 @@ name: drone-falhas
 description: "Falhas de plantio em ortomosaico de drone pelo motor híbrido v3 (plantas como picos, solo exposto, limiar local), critério do usuário (Stolf 1986 e a régua ABNT como sugestões), candidatas gravadas e tabela por critério e por classe de comprimento. Use para \"falhas\", \"gaps\", \"vãos\", \"replantio\", \"% de falha\", em cana, grãos e perenes."
 ---
 
-<!-- GERADO por scripts/gera-drone.mjs a partir do playbook analise-drone-qgis (skills-agro, versão b133424b) + scripts/drone-extras/. Não edite à mão: corrija a fonte e gere de novo. -->
+<!-- GERADO por scripts/gera-drone.mjs a partir do playbook analise-drone-qgis (skills-agro, versão cc3fc248) + scripts/drone-extras/. Não edite à mão: corrija a fonte e gere de novo. -->
 
 # ClaudIA Drone — falhas de plantio
 
@@ -63,4 +63,4 @@ Entregue sempre a tabela por comprimento mínimo (qualquer, ≥ 0,3, ≥ 0,5, �
 - `references/trechos.md`
 
 ---
-Fonte do método: playbook `analise-drone-qgis` da comunidade agrônomo10X (skills-agro, MIT; versão b133424b). Sigilo, informação (não recomendação) e as regras dos conectores: skill `roteamento-agronomo10x`.
+Fonte do método: playbook `analise-drone-qgis` da comunidade agrônomo10X (skills-agro, MIT; versão cc3fc248). Sigilo, informação (não recomendação) e as regras dos conectores: skill `roteamento-agronomo10x`.

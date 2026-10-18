@@ -3,7 +3,7 @@ name: drone-imagem
 description: "Resolução, GSD e qualidade do ortomosaico de drone para cada tarefa (faixas por cultura e estádio, hora do voo, sobreposição, RGB e multiespectral, DSM e CHM), pixel exportado contra o GSD das fotos, super-resolução só para visualizar. Use para \"dá para contar ou medir com esta imagem?\", \"qual altura de voo\", \"melhorar a resolução\", \"a imagem está ruim\", e ao avaliar a adequação antes de uma análise."
 ---
 
-<!-- GERADO por scripts/gera-drone.mjs a partir do playbook analise-drone-qgis (skills-agro, versão b133424b) + scripts/drone-extras/. Não edite à mão: corrija a fonte e gere de novo. -->
+<!-- GERADO por scripts/gera-drone.mjs a partir do playbook analise-drone-qgis (skills-agro, versão cc3fc248) + scripts/drone-extras/. Não edite à mão: corrija a fonte e gere de novo. -->
 
 # ClaudIA Drone — imagem, resolução e voo
 
@@ -34,4 +34,4 @@ Voo: meio-dia solar ± 2 h (sombra mínima; dia nublado dá luz difusa); sobrepo
 Diga em que faixa a imagem está para a tarefa, o que esperar (acurácia observada em casos parecidos, quando houver), o motivo quando estiver fora (pixel, dossel fechado, borrão, costuras, sombra) e a recomendação de voo para a próxima vez — e ofereça rodar mesmo assim, medindo nas janelas. Com o módulo da ClaudIA QGIS (versão 1), `cd.cena.adequacao(s, tarefa)` faz essa conta.
 
 ---
-Fonte do método: playbook `analise-drone-qgis` da comunidade agrônomo10X (skills-agro, MIT; versão b133424b). Sigilo, informação (não recomendação) e as regras dos conectores: skill `roteamento-agronomo10x`.
+Fonte do método: playbook `analise-drone-qgis` da comunidade agrônomo10X (skills-agro, MIT; versão cc3fc248). Sigilo, informação (não recomendação) e as regras dos conectores: skill `roteamento-agronomo10x`.

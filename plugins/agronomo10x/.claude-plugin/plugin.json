@@ -1,7 +1,7 @@
 {
   "name": "agronomo10x",
   "displayName": "agrônomo10X",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Os quatro conectores da comunidade agrônomo10X — conteúdo das aulas e lives, ClaudIA Sat (satélite Sentinel-2 da fazenda), ClaudIA Clima (chuva, previsão e janela de pulverização) e ClaudIA QGIS (opera o QGIS aberto no seu computador) — com as skills que ensinam o Claude a usá-los juntos e os atalhos para fazenda, satélite, clima, zonas no QGIS e a análise de imagens de drone (ClaudIA Drone: linhas, falhas, contagem, segmentação, anotação, validação e relatório). Exige conta na comunidade; cada conector pede o login dela.",
   "author": {
     "name": "OagronomIA · comunidade agrônomo10X",
