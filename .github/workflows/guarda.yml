@@ -1,0 +1,22 @@
+# O portão do marketplace (18/10/2026): este repositório é o marketplace do Claude, e um commit no main muda o plugin
+# de todos os membros. O script recusa o que sairia do desenho (só texto + os conectores HTTP da comunidade).
+name: Portão do marketplace
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  guarda:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          persist-credentials: false
+      - run: node scripts/guarda.mjs
+        env:
+          # a lista dos nomes sigilosos (separados por vírgula) fica no segredo do repositório, não no código
+          TERMOS_SIGILO: ${{ secrets.TERMOS_SIGILO }}
